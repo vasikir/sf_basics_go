@@ -24,7 +24,7 @@ func main() {
 	for guesses := 0; guesses < 10; guesses++ {
 		fmt.Println("У тебя осталось ", 10-guesses, " попыток")
 
-		fmt.Println("Введи новое число: ")
+		fmt.Print("Введи новое число: ")
 		input, err := reader.ReadString('\n')
 		if err != nil {
 			log.Fatal(err)
