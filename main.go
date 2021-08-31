@@ -7,6 +7,10 @@ import (
 )
 
 func main() {
-	fmt.Println(maths.Sum(2, 3))
-	fmt.Println(maths.Sub(5, 3))
+	print(maths.Sum, 5, 2)
+	print(maths.Sub, 4, 3)
+}
+
+func print(f func(int, int) int, a, b int) {
+	fmt.Println(f(a, b))
 }
